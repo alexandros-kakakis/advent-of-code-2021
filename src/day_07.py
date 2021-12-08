@@ -28,7 +28,7 @@ total_fuel = find_best_position_and_return_total_fuel(puzzle_input, calculate_fu
 print('Part One:', total_fuel)
 
 # Part Two
-calculate_fuel = lambda x: np.sum( range(x + 1) )
+calculate_fuel = lambda x: ( x ** 2 + x ) / 2
 total_fuel = find_best_position_and_return_total_fuel(puzzle_input, calculate_fuel)
 
-print('Part Two:', total_fuel)
+print('Part Two:', int(total_fuel) )
